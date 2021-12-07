@@ -1,26 +1,27 @@
 <div class="js-country card">
-    <h2 class="country-title">{{name}}</h2>
+    <img class="flags-picture" src='{{flags.svg}}' alt='{{name}}'>
+    <h1 class="country-title">{{name}}</h1>
     <div class="country-content">
-        <ul class="country-list list">
+        <ul class="country-list">
             <li class="country-list-elem ">
-                <h3 class="country-list-elem-title">Capital:</h3>
+                <h2 class="country-list-elem-title">Capital:</h2>
                 <p class="country-list-elem-text">{{capital}}</p>
             </li>
             <li class="country-list-elem">
-                <h3 class="country-list-elem-title">Population:</h3>
+                <h2 class="country-list-elem-title">Population:</h2>
                 <p class="country-list-elem-text">{{population}}</p>
             </li>
             <li class="country-list-elem">
-                <h3 class="country-list-elem-title">Languages:</h3>
-                <ul class="country-list-list">
+                <h2 class="country-list-elem-title">Languages:</h2>
+                <ul class="country-list">
                     {{#each languages}}
-                    <li class="country-list-list-elem">
+                    <li class="country-list-elem">
                         <p class="country-list-elem-text">{{name}}</p>
                     </li>
                     {{/each}}
                 </ul>
             </li>
         </ul>
-        <img class="flags-picture" src={{flags.svg}} alt={{name}}>
+        
     </div>
 </div>
