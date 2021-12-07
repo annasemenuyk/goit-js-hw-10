@@ -1,0 +1,26 @@
+<div class="js-country card">
+    <h2 class="country-title">{{name}}</h2>
+    <div class="country-content">
+        <ul class="country-list list">
+            <li class="country-list-elem ">
+                <h3 class="country-list-elem-title">Capital:</h3>
+                <p class="country-list-elem-text">{{capital}}</p>
+            </li>
+            <li class="country-list-elem">
+                <h3 class="country-list-elem-title">Population:</h3>
+                <p class="country-list-elem-text">{{population}}</p>
+            </li>
+            <li class="country-list-elem">
+                <h3 class="country-list-elem-title">Languages:</h3>
+                <ul class="country-list-list">
+                    {{#each languages}}
+                    <li class="country-list-list-elem">
+                        <p class="country-list-elem-text">{{name}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+        </ul>
+        <img class="flags-picture" src={{flags.png}} alt={{name}}>
+    </div>
+</div>
