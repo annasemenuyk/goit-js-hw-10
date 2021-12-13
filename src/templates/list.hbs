@@ -1,6 +1,9 @@
-<ul class="countries-list">
-    {{#each this}}
-  <img class="flags-picture" src='{{flags.svg}}' alt=''width="70" height="50">
-    <h1 class="country-title">{{name.official}}</h1>
-    {{/each}}
-</ul>
+{{#each this}}
+<li class="countries-list">
+    <div class="flags-picture">
+        <img src="{{flags.svg}}" alt="" width="70" height="50">
+    </div>
+    <h2 class="countries-list-title">{{name.official}}</h2>
+    
+</li>
+{{/each}}

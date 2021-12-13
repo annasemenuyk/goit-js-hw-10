@@ -17,4 +17,39 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border: 1px solid #585858;
+  border-radius: 5px;
+}
+.page-title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 60px;
+}
+.countries-list {
+  list-style: none;
+}
+.country-list li,
+.country-content {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  }
+
+.country-list img {
+  margin-right: 10px;
+}
+.flags-picture {
+  display: inline;
+  margin-right: 10px;
+  width: 70 px;
+  height: 50 px;
+}
+.countries-list-title{
+    font-weight: 800;
+  }
+.country-list-elem-title {
+  font-weight: 600;
+}
+.country-list-elem-text {
+  font-weight: 400;
 }

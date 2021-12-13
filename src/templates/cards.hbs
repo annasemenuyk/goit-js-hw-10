@@ -1,28 +1,13 @@
-
-<div class="js-country card">
-    <img src="{{flags.svg}}" alt="" width="110" height="90">
-    <h1 class="country-title">{{name.official}}</h1>
-    <div class="country-content">
-        <ul class="country-list">
-            <li class="country-list-elem ">
-                <h2 class="country-list-elem-title">Capital:</h2>
-                <p class="country-list-elem-text">{{capital}}</p>
-            </li>
-            <li class="country-list-elem">
-                <h2 class="country-list-elem-title">Population:</h2>
-                <p class="country-list-elem-text">{{population}}</p>
-            </li>
-            <li class="country-list-elem">
-                <h2 class="country-list-elem-title">Languages:</h2>
-                <ul class="country-list">
-                    {{#each languages}}
-                    <li class="country-list-elem">
-                        <p class="country-list-elem-text">{{this}}</p>
-                    </li>
-                    {{/each}}
-                </ul>
-            </li>
-        </ul>
-        
+{{#each this}}
+    <div class="js-country card">
+        <div class="country-content">
+            <div class="flags-picture">
+            <img src="{{flags.svg}}" alt="" width="70" height="50">
+            </div>
+            <h1 class="countries-list-title">{{name.official}}</h1>
+        </div>
+        <p class="country-list-elem-title">Capital: <span class="country-list-elem-text">{{capital}}</span></p>
+        <p class="country-list-elem-title">Population: <span class="country-list-elem-text">{{population}}</span></p>
+        <p class="country-list-elem-title">Languages: {{#each languages}}<span class="country-list-elem-text">{{this}} </span>{{/each}}</p>
     </div>
-</div>
+{{/each}}
