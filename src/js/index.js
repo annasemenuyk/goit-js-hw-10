@@ -59,6 +59,7 @@ if (countries.length === 1) {
     Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
 }  else {
     countrySearch.innerHTML = markupSearch;
+    countryContent.innerHTML = '';
 } 
 }
   
